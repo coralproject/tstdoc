@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generates the expected form 1`] = `
+"
+  ### Parameters
+
+  #### \`action\` _(string, enum)_
+
+  action refers to the specific operation being performed. If \`NEW\`, this is referring to a new comment being created. If \`EDIT\`, then this refers to an operation involving an edit operation on an existing Comment.
+
+Possible enum values for \`action\`:
+
+- \`EDIT\`
+- \`NEW\`
+  #### \`author\` _(object)_
+
+  author refers to the User that is creating/editing the Comment.
+
+  ##### Attributes
+
+- \`author.id\` _(string)_ - id is the identifier for this User.- \`author.role\` _(string, enum)_ - role refers to the role of this User. Possible enum values:    - \`ADMIN\`    - \`COMMENTER\`    - \`MODERATOR\`    - \`STAFF\`  #### \`comment\` _(object)_
+
+  comment refers to the actual Comment data for the Comment being created/edited.
+
+  ##### Attributes
+
+- \`comment.body\` _(string)_ - body refers to the actual body text of the Comment being created/edited.- \`comment.parentID\` _(null,string)_ - parentID is the identifier for the parent comment (if this Comment is a reply, null otherwise).  #### \`site\` _(object)_
+
+  site refers to the Site that the story being commented on belongs to.
+
+  ##### Attributes
+
+- \`site.id\` _(string)_ - id is the identifier for this Site.  #### \`story\` _(object)_
+
+  story refers to the Story being commented on.
+
+  ##### Attributes
+
+- \`story.id\` _(string)_ - id is the identifier for this Story.- \`story.url\` _(string)_ - url is the URL for this Story.  #### \`tenantDomain\` _(string)_
+
+  tenantDomain is the domain that is associated with this Tenant that this Comment is being created/edited on.
+
+  #### \`tenantID\` _(string)_
+
+  tenantID is the identifer of the Tenant that this Comment is being created/edited on.
+
+"
+`;
