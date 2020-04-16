@@ -1,7 +1,7 @@
 {
   "name": "@coralproject/tstdoc",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": "The Coral Project",
   "license": "Apache-2.0",
   "private": false,
