@@ -35,8 +35,22 @@ function findCompilerOptions(fileName: string) {
 }
 
 interface Options {
+  /**
+   * indent is the number of header characters to start each header with
+   * (minimum 1).
+   */
   indent: number;
+
+  /**
+   * fileName is the file that contains the typescript type that you want to
+   * generate documentation for.
+   */
   fileName: string;
+
+  /**
+   * symbolNames are the symbols in the file that you want to generate
+   * documentation for.
+   */
   symbolNames: string[];
 }
 

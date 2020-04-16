@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+const { parser } = require("../dist");
+
+async function main() {
+  const args = process.argv.slice(2);
+
+  // For each filename in args, rewrite it!
+  for (const fileName of args) {
+    await parser(fileName);
+  }
+}
+
+main();

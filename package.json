@@ -12,8 +12,12 @@
     "test": "jest"
   },
   "files": [
-    "/dist"
+    "/dist",
+    "/bin"
   ],
+  "bin": {
+    "tstdoc": "./bin/cli"
+  },
   "dependencies": {
     "@apidevtools/json-schema-ref-parser": "^8.0.0",
     "common-tags": "^1.8.0",
