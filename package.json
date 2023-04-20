@@ -22,7 +22,7 @@
     "@apidevtools/json-schema-ref-parser": "^8.0.0",
     "common-tags": "^1.8.0",
     "json-schema-to-markdown": "^1.1.1",
-    "nunjucks": "^3.2.1",
+    "nunjucks": "^3.2.4",
     "typescript-json-schema": "^0.42.0"
   },
   "devDependencies": {
